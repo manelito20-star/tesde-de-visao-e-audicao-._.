@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Visão e Audição - Triagem Clínica Avançada</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-950">
 
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                    <i data-lucide="activity" class="w-6 h-6 text-slate-950 stroke-[2.5]"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+                    Visão & Audição
+                </span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
+                <a href="#funcionalidades" class="hover:text-emerald-400 transition-colors">Funcionalidades</a>
+                <a href="#exames" class="hover:text-emerald-400 transition-colors">Exames</a>
+                <a href="#tecnologia" class="hover:text-emerald-400 transition-colors">Tecnologia</a>
+                <a href="#capturas" class="hover:text-emerald-400 transition-colors">Screenshots</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <!-- Botão Download Verde no Header -->
+                <a href="https://github.com/manelito20-star/tesde-de-visao-e-audicao-._./releases/download/v1.0/tesde.de.visao.e.audicao.v1.apk" class="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all text-sm">
+                    <i data-lucide="download" class="w-4 h-4 stroke-[2.5]"></i>
+                    <span>Download APK</span>
+                </a>
+                
+                <a href="https://github.com/manelito20-star/tesde-de-visao-e-audicao-._." target="_blank" class="hidden sm:flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-4 py-2.5 rounded-xl border border-slate-800 transition-all text-sm">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold tracking-wide uppercase mb-8">
+                <i data-lucide="heart-pulse" class="w-3.5 h-3.5"></i> Triagem Clínica & Avaliação Sensorial de Alta Precisão
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 max-w-4xl mx-auto">
+                Avalia a tua visão e audição com rigor e tecnologia.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Audiometria de alta precisão, tabela de Snellen, testes de astigmatismo, pranchas de Ishihara e relatório pré-clínico completo no teu smartphone.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://github.com/manelito20-star/tesde-de-visao-e-audicao-._./releases/download/v1.0/tesde.de.visao.e.audicao.v1.apk" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5">
+                    <i data-lucide="download" class="w-5 h-5 stroke-[2.5]"></i>
+                    <span>Descarregar APK v1.0</span>
+                </a>
+                <a href="#capturas" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-800 transition-all">
+                    <span>Ver Screenshots</span>
+                    <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Stats / Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-20 pt-10 border-t border-slate-900 text-left">
+                <div>
+                    <div class="text-3xl font-extrabold text-white mb-1">6 Frequências</div>
+                    <div class="text-xs text-slate-400 font-medium">Audiometria Clínica (250Hz - 8000Hz)</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-white mb-1">Snellen 8x</div>
+                    <div class="text-xs text-slate-400 font-medium">Acuidade Visual 20/200 a 20/15</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-white mb-1">Ishihara</div>
+                    <div class="text-xs text-slate-400 font-medium">8 Pranchas para Daltonismo</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">55 dB</div>
+                    <div class="text-xs text-slate-400 font-medium">Medidor de Ruído em Tempo Real</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="funcionalidades" class="py-24 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-emerald-400 text-sm font-bold tracking-wider uppercase mb-3">Funcionalidades Principais</h2>
+                <p class="text-3xl md:text-4xl font-bold text-white tracking-tight">Avaliação sensorial completa num só lugar.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400">
+                        <i data-lucide="headphones" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Audiometria com Laudo Gráfico</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Avaliação tonal em 6 frequências com 5 níveis de intensidade. Gera um gráfico 2D em Canvas (OD vs OE) e mede o ruído ambiente em tempo real para garantir o silêncio.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center mb-6 text-teal-400">
+                        <i data-lucide="eye" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Exames de Visão Completo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Inclui a tabela de Snellen com 8 níveis clínicos, teste de astigmatismo com 3 padrões geométricos e 8 pranchas de Ishihara para deteção de daltonismo.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-6 text-indigo-400">
+                        <i data-lucide="brain" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Exame Duplo Simultâneo (TTS)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        40 rodadas rigorosas que combinam estímulos visuais microscópicos (até 7sp) e auditivos sintetizados em tempo real para testar a coerência multissensorial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exames Section -->
+    <section id="exames" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="p-10 md:p-16 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/30 border border-slate-800 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 space-y-6">
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                        Relatório Consolidado
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        Parecer Pré-Clínico Imediato
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Após a conclusão dos exames, a aplicação sintetiza todos os dados num laudo textual claro, recomendando a consulta com Oftalmologistas ou Otorrinolaringologistas caso detete desvios significativos.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+                            Análise independente para Olho Esquerdo, Direito e Ambos.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+                            Síntese estéreo de áudio via AudioTrack.
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-80 p-6 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-4 text-center">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-2">
+                        <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+                    </div>
+                    <div class="font-bold text-white">Relatório Consolidado</div>
+                    <div class="text-xs text-slate-400">Resultados consolidados em tempo real com gráfico de Audiograma 2D.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tecnologia" class="py-20 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-8">Construído com tecnologia moderna Android</h2>
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 font-semibold text-slate-300 text-sm">
+                <span class="flex items-center gap-2"><i data-lucide="code-2" class="w-4 h-4 text-emerald-400"></i> Kotlin</span>
+                <span class="flex items-center gap-2"><i data-lucide="layout-grid" class="w-4 h-4 text-emerald-400"></i> Jetpack Compose (Material 3)</span>
+                <span class="flex items-center gap-2"><i data-lucide="volume-2" class="w-4 h-4 text-emerald-400"></i> AudioTrack & AudioRecord</span>
+                <span class="flex items-center gap-2"><i data-lucide="mic" class="w-4 h-4 text-emerald-400"></i> TextToSpeech (TTS)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="capturas" class="py-24 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-emerald-400 text-sm font-bold tracking-wider uppercase mb-3">Interface da Aplicação</h2>
+                <p class="text-3xl md:text-4xl font-bold text-white tracking-tight">Capturas de Ecrã dos Exames</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/1.jpeg" alt="Screenshot 1" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/2.jpeg" alt="Screenshot 2" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/3.jpeg" alt="Screenshot 3" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/4.jpeg" alt="Screenshot 4" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/5.jpeg" alt="Screenshot 5" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/6.jpeg" alt="Screenshot 6" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/7.jpeg" alt="Screenshot 7" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50">
+                    <img src="https://raw.githubusercontent.com/manelito20-star/tesde-de-visao-e-audicao-._./main/8.jpeg" alt="Screenshot 8" class="w-full h-auto object-cover rounded-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© Triagem Clínica: Visão & Audição — Avaliação Sensorial Avançada</p>
+            <p>Projeto de código aberto sob licença de testes e desenvolvimento.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
